@@ -31,6 +31,8 @@ class InverseNumberStream extends Transform {
         callback(null, Buffer.from(String(transformed)))
     }
 }
+
+
 class MultiplyByTensStream extends Writable{
    _write(chunk, enconding , callback){
     console.log(Number(chunk.toString()) *10)
